@@ -14,10 +14,10 @@ const Solution = ({word, userLetters}) => {
       );
     });
   };
-    <div className='solution'>
-        <h2 className='title'>Solución:</h2>
-        <ul className='letters'>{renderSolutionLetters(word, userLetters)}</ul>
-    </div>
+    return <div className='solution'>
+                <h2 className='title'>Solución:</h2>
+                <ul className='letters'>{renderSolutionLetters(word, userLetters)}</ul>
+            </div>
 }
 
 export default Solution;

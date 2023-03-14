@@ -47,8 +47,6 @@ function App() {
   };
 
 
-  
-
   const handleLastLetter = (value) => {
     value = value.toLocaleLowerCase();
     setLastLetter(value);
@@ -84,7 +82,7 @@ function App() {
             />
           </form>
         </section>
-        <Dummy number= {getNumberOfErrors}/>
+        <Dummy number= {getNumberOfErrors()}/>
       </main>
     </div>
   );

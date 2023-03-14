@@ -13,10 +13,10 @@ const ErrorLetters = ({word, userLetters}) => {
       );
     });
   };
-    <div className='error'>
-        <h2 className='title'>Letras falladas:</h2>
-        <ul className='letters'>{renderErrorLetters(word, userLetters)}</ul>
-    </div>
+    return <div className='error'>
+                <h2 className='title'>Letras falladas:</h2>
+                <ul className='letters'>{renderErrorLetters(word, userLetters)}</ul>
+            </div>
 }
 
 export default ErrorLetters;
