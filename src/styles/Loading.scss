@@ -5,12 +5,13 @@
   display: block;
   width: 2rem;
   height: 2rem;
-  border: 0.25rem solid white;
+  border: 0.25rem solid rgb(211, 45, 45);
   border-radius: 50%;
   transform: translate(-50%, -50%);
   animation-name: beat;
   animation-duration: 1s;
   animation-iteration-count: infinite;
+  color:red;
 
   &.hidden {
     opacity: 0;
