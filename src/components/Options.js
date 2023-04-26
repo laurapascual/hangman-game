@@ -1,3 +1,4 @@
+
 const Options = ({handleChange, word}) => {
     const handleSubmit = (ev) => {
         ev.preventDefault();

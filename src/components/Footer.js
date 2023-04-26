@@ -17,7 +17,6 @@ const Footer = () => {
         </li>
         </ul>
     </nav>
-    <small className="footer__copy">© Adalab</small>
     </footer>
   );
 };

@@ -1,16 +1,13 @@
+import '../styles/Instructions.scss';
+
 const Instructions = () => {
   return (
     <section className="instructions">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            provident nisi voluptatem est nostrum optio perferendis doloremque,
-            delectus at, assumenda suscipit sit odio ipsum error consequatur numquam
-            vero impedit nulla?
+            Este juego consiste en adivinar la palabra que genera automáticamente la página web. Los aciertos hacen que la letra se agregue en los espacios correctos de la palabra o frase. Las opciones incorrectas agregan piezas a la horca y al ahorcado. Las letras incorrectas se muestran en la sección "letras fallidas".
         </p>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            animi voluptatem quis impedit amet in dicta soluta explicabo, fugit magni
-            mollitia, pariatur eos, repellendus aut esse recusandae minima eum eaque.
+            En el apartado "más opciones" encontrarás la posibilidad de añadir la palabra que quieres que otras personas adivinen o ver la solución de la palabra actual.
         </p>
 </section>
   );
