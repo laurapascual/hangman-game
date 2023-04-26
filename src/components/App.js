@@ -8,6 +8,7 @@ import Footer from './Footer';
 import Instructions from './Instructions';
 import Options from './Options';
 import Loading from './Loading';
+import Message from './Message';
 // api
 import getWordFromApi from '../services/api';
 // styles
@@ -21,6 +22,7 @@ function App() {
   const [userLetters, setUserLetters] = useState([]);
   const [lastLetter, setLastLetter] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [hasWon, setHasWon] = useState(false);
 
   useEffect(() => {
     setIsLoading(true);
@@ -30,7 +32,17 @@ function App() {
     });
   }, []);
 
-  // events
+  useEffect(() => {
+  if (userLetters.length > 0 && checkIfUserWon(word, userLetters)) {
+    setHasWon(true);
+  }
+}, [word, userLetters]);
+
+  function checkIfUserWon(word, userLetters) {
+  const wordLetters = new Set(word.split(''));
+  const guessedLetters = new Set(userLetters);
+  return wordLetters.size === guessedLetters.size && [...wordLetters].every((letter) => guessedLetters.has(letter));
+}
 
   const getNumberOfErrors = () => {
     const errorLetters = userLetters.filter(
@@ -65,6 +77,7 @@ function App() {
               <section>
                 <Solution word={word} userLetters={userLetters} />
                 <ErrorLetters word={word} userLetters={userLetters} />
+                {hasWon && <Message/>}
                 <Form
                   lastLetter={lastLetter}
                   handleLastLetter={handleLastLetter}
