@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
     <nav>
-        <ul>
+        <ul className="footer">
         <li className="footer__menu-item">
           <NavLink to='/' className={({ isActive}) => isActive ? "footer__menu-link active" : "footer__menu-link"}>A jugar</NavLink>
         </li>

@@ -7,11 +7,14 @@
     border: none;
     border-bottom: 3px solid white;
     text-align: center;
-    font-size: 4rem;
+    font-size: 2rem;
     outline: none;
     animation-name: borderBottomInput;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    @media (min-width: 768px) {
+        font-size: 4rem;
+      }
 
     &[maxLength='1'] {
       width: 5rem;

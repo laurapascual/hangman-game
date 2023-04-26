@@ -80,15 +80,18 @@ function checkIfUserWon() {
           <Route
             path="/"
             element={
-              <section>
-                <Solution word={word} userLetters={userLetters} />
-                <ErrorLetters word={word} userLetters={userLetters} />
-                <Form
-                  lastLetter={lastLetter}
-                  handleLastLetter={handleLastLetter}
-                />
-                {hasWon && <Message/>}
-              </section>
+              <>
+                <section>
+                  <Solution word={word} userLetters={userLetters} />
+                  <ErrorLetters word={word} userLetters={userLetters} />
+                  <Form
+                    lastLetter={lastLetter}
+                    handleLastLetter={handleLastLetter}
+                  />
+                  {hasWon && <Message/>}
+                </section>
+                <Dummy number={getNumberOfErrors()} />
+              </>
             }
           ></Route>
           <Route
@@ -108,7 +111,6 @@ function checkIfUserWon() {
             }
           ></Route>
         </Routes>
-        <Dummy number={getNumberOfErrors()} />
       </main>
       <Footer />
     </div>

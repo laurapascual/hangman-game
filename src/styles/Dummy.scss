@@ -3,10 +3,14 @@ $dummyDisabledColor: rgba(255, 255, 255, 0.2);
 $dummyTransitionTime: 1s;
 
 .dummy {
-  margin-left: 4rem;
+  margin-left: 0rem;
   position: relative;
-  min-width: 15rem;
+  min-width: 12rem;
   height: 25rem;
+  @media (min-width: 768px) {
+      margin-left: 4rem;
+      min-width: 15rem;
+    }
 
   .line {
     position: absolute;
