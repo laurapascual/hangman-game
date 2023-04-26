@@ -6,7 +6,6 @@ const Form = ({ lastLetter, handleLastLetter }) => {
     }
   };
   const handleKeyDown = (ev) => {
-    // Sabrías decir para qué es esta línea
     ev.target.setSelectionRange(0, 1);
   };
 
