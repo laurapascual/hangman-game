@@ -1,7 +1,7 @@
 const Message = () => {
     return (
     <div className="message">
-      <p>Congratulations, you won!</p>
+      <p>¡Enhorabuena, has ganado!</p>
     </div>
   );
 }
