@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "./static/css/main.b0b28769.css",
-    "main.js": "./static/js/main.5e9f0d01.js",
+    "main.css": "./static/css/main.000ac4fa.css",
+    "main.js": "./static/js/main.a754d68c.js",
     "static/media/chalkboard.jpg": "./static/media/chalkboard.095397262dda0f1bb696.jpg",
     "static/media/KgTenThousandReasons-R1ll.ttf": "./static/media/KgTenThousandReasons-R1ll.152e903334ad9b5b7845.ttf",
     "index.html": "./index.html",
-    "main.b0b28769.css.map": "./static/css/main.b0b28769.css.map",
-    "main.5e9f0d01.js.map": "./static/js/main.5e9f0d01.js.map"
+    "main.000ac4fa.css.map": "./static/css/main.000ac4fa.css.map",
+    "main.a754d68c.js.map": "./static/js/main.a754d68c.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0b28769.css",
-    "static/js/main.5e9f0d01.js"
+    "static/css/main.000ac4fa.css",
+    "static/js/main.a754d68c.js"
   ]
 }
