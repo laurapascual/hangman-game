@@ -59,6 +59,7 @@ function checkIfUserWon() {
     setLastLetter('');
     setHasWon(false);
     setUserLetters([]);
+    setRightLetters([]);
   };
 
 
