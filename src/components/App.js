@@ -23,8 +23,8 @@ function App() {
   const [lastLetter, setLastLetter] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [hasWon, setHasWon] = useState(false);
-  
   const [rightLetters, setRightLetters] = useState([]);
+  
   useEffect(() => {
     setIsLoading(true);
     getWordFromApi().then((word) => {
@@ -51,6 +51,16 @@ function checkIfUserWon() {
     );
     return errorLetters.length;
   };
+
+  const handleReset = () => {
+    getWordFromApi().then((word) => {
+      setWord(word);
+    })
+    setLastLetter('');
+    setHasWon(false);
+    setUserLetters([]);
+  };
+
 
   const handleLastLetter = (value) => {
     value = value.toLocaleLowerCase();
@@ -88,7 +98,7 @@ function checkIfUserWon() {
                     lastLetter={lastLetter}
                     handleLastLetter={handleLastLetter}
                   />
-                  {hasWon && <Message/>}
+                  {hasWon && <Message handleReset={handleReset}/>}
                 </section>
                 <Dummy number={getNumberOfErrors()} />
               </>
